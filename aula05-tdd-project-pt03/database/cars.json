@@ -1,0 +1,16 @@
+[
+  {
+    "id": "8dc897db-7943-4df9-a524-a951657421b6",
+    "name": "Challenger",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  },
+  {
+    "id": "556d32da-4c5f-43f4-9b98-85c8d60ce9ec",
+    "name": "Charger",
+    "releaseYear": 2020,
+    "available": true,
+    "gasAvailable": true
+  }
+]
