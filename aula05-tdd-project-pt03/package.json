@@ -7,8 +7,10 @@
     "test": "test"
   },
   "scripts": {
-    "test": "npx mocha -w --parallel **/**/*.test.js",
-    "test:cov": "npx nyc npx mocha --parallel **/**/*.test.js",
+    "start": "node src/api.js",
+    "test:dev": "NODE_ENV=test npx mocha -w --parallel **/**/*.test.js",
+    "test": "NODE_ENV=test npx mocha --parallel **/**/*.test.js",
+    "test:cov": "NODE_ENV=test npx nyc npx mocha --exit --parallel **/**/*.test.js",
     "seed": "node ./seed"
   },
   "keywords": [],
