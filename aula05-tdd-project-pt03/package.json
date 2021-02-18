@@ -21,6 +21,7 @@
     "faker": "^5.3.1",
     "mocha": "8",
     "nyc": "15",
-    "sinon": "9"
+    "sinon": "9",
+    "supertest": "^6.1.3"
   }
 }
