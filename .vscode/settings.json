@@ -1,3 +1,106 @@
 {
-  "editor.formatOnSave": true
+  "editor.tabSize": 2,
+  "editor.fontSize": 14,
+  "editor.lineHeight": 24,
+  "editor.fontFamily": "Fira Code Retina",
+  "editor.fontLigatures": true,
+  "editor.renderLineHighlight": "line",
+  "editor.parameterHints.enabled": false,
+  "editor.rulers": [80, 120],
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnPaste": false,
+  "editor.minimap.maxColumn": 140,
+  "editor.formatOnSave": true,
+  "editor.wordWrap": "wordWrapColumn",
+  "editor.wrappingIndent": "same",
+  "editor.wordWrapColumn": 120,
+
+  "workbench.colorTheme": "Dracula",
+  "workbench.iconTheme": "material-icon-theme",
+  "workbench.startupEditor": "newUntitledFile",
+  "workbench.editor.labelFormat": "short",
+
+  "explorer.compactFolders": false,
+  "extensions.ignoreRecommendations": true,
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "typescript.updateImportsOnFileMove.enabled": "always",
+  "breadcrumbs.enabled": true,
+  "explorer.confirmDragAndDrop": false,
+  "explorer.confirmDelete": false,
+  "[javascript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[javascriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    }
+  },
+  "[typescript]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true,
+      "source.fixAll.tslint": true
+    },
+    "editor.formatOnSave": true
+  },
+  "[typescriptreact]": {
+    "editor.codeActionsOnSave": {
+      "source.fixAll.eslint": true
+    },
+    "editor.formatOnSave": true
+  },
+  "files.associations": {
+    ".sequelizerc": "javascript",
+    ".stylelintrc": "json",
+    ".prettierrc": "json"
+  },
+  "window.zoomLevel": 0,
+  "prettier.jsxBracketSameLine": true,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingJsxExpressionBraces": true,
+  "material-icon-theme.folders.associations": {
+    "infra": "app",
+    "entities": "class",
+    "schemas": "class",
+    "typeorm": "database",
+    "repositories": "mappings",
+    "http": "container",
+    "migrations": "tools",
+    "modules": "components",
+    "implementations": "core",
+    "dtos": "typescript",
+    "fakes": "mock",
+    "http-interceptors": "routes"
+  },
+  "material-icon-theme.files.associations": {
+    "ormconfig.json": "database",
+    "tsconfig.json": "tune",
+    "*.interceptor.ts": "routing"
+  },
+  "liveServer.settings.donotShowInfoMsg": true,
+  "liveServer.settings.donotVerifyTags": true,
+  "todo-tree.tree.showScanModeButton": false,
+  "html.format.indentInnerHtml": true,
+  "html.format.preserveNewLines": true,
+  "html.format.wrapAttributes": "preserve",
+  "terminal.integrated.fontSize": 14,
+  "terminal.integrated.env.linux": {
+    "LESSCHARSET": "utf-8"
+  },
+  "terminal.integrated.shell.linux": "/bin/zsh",
+  "terminal.integrated.detectLocale": "on",
+  "terminal.integrated.unicodeVersion": "11",
+  "eslint.alwaysShowStatus": true,
+  "eslint.format.enable": true,
+  "eslint.options": {
+    "linebreak-style": "unix",
+    "object-curly-newline": {
+      "multiline": true
+    },
+    "object-property-newline": true
+  },
+  "javascript.suggest.completeFunctionCalls": true,
+  "javascript.format.placeOpenBraceOnNewLineForControlBlocks": true
 }
