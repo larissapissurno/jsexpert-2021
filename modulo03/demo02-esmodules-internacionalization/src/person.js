@@ -11,9 +11,6 @@ export default class Person {
     const mapDate = (date) => {
       const [year, month, day] = date.split("-").map(Number);
 
-      console.log(year, month, day);
-      console.log(new Date(year, month - 1, day));
-
       return new Date(year, month - 1, day);
     };
 
@@ -38,5 +35,21 @@ export default class Person {
         year: "numeric",
       }).format(mapDate(this.to)),
     };
+  }
+
+  static generateInstanceFromString(text) {
+    const EMPTY_SPACE = " ";
+    const COMMA = ",";
+    const [id, vehicles, kmTraveled, from, to] = text.split(EMPTY_SPACE);
+
+    const person = new Person({
+      id,
+      kmTraveled,
+      from,
+      to,
+      vehicles: vehicles.split(COMMA),
+    });
+
+    return person;
   }
 }
