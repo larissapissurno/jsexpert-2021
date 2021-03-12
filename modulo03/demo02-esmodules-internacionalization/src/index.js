@@ -4,9 +4,11 @@ import chalkTable from "chalk-table";
 import readLine from "readline";
 
 import database from "./../database.json";
+import Person from "./person.js";
 
 Draftlog(console).addLineListener(process.stdin);
 
+const DEFAULT_LANG = "pt-BR";
 const options = {
   leftPad: 2,
   columns: [
@@ -18,7 +20,10 @@ const options = {
   ],
 };
 
-const table = chalkTable(options, database);
+const table = chalkTable(
+  options,
+  database.map((item) => new Person(item).formatted(DEFAULT_LANG))
+);
 const print = console.draft(table);
 
 const terminal = readLine.createInterface({
@@ -26,9 +31,9 @@ const terminal = readLine.createInterface({
   output: process.stdout,
 });
 
-terminal.question("Qual é o seu nome?", (msg) => {
-  console.log("msg", msg.toString());
-});
+// terminal.question("Qual é o seu nome?", (msg) => {
+//   console.log("msg", msg.toString());
+// });
 // setInterval(() => {
 //   database.push({
 //     id: Date.now(),
